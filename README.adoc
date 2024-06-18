@@ -67,7 +67,7 @@ image:https://img.shields.io/github/downloads/OpenBangla/OpenBangla-Keyboard/tot
 bash -c "$(wget -q https://raw.githubusercontent.com/me-js-bro/Build-OpenBangla-Keyboard/main/build.sh -O -)"
 ```
 
-== ম্যানুয়ালি বিল্ড/কম্পাইল পদ্ধতি
+== ম্যানুয়ালি বিল্ড/কম্পাইল পদ্ধতি ( অফিশিয়াল ওপেনবাংলা-কিবোর্ড রিপো থেকে )
 
 ওপেনবাংলা কিবোর্ড কম্পাইল তথা সোর্সকোড থেকে বিল্ড করার জন্য বর্তমানে নিম্নোলিখিত ডিপেন্ডেসিগুলো প্রয়োজন:
 
@@ -106,14 +106,17 @@ sudo zypper install libQt5Core-devel libQt5Widgets-devel libQt5Network-devel lib
 === পরবর্তী ধাপঃ
 বিল্ড ডিপেন্ডেন্সিগুলো ইনস্টলের পর ওপেনবাংলা কিবোর্ডের সোর্স কোড রিপজিটরিটি ক্লোন করুন এবং ক্লোন করা ডিরেক্টরিতে প্রবেশ করুন:
 ```bash
-git clone --recursive https://github.com/asifakonjee/openbangla-fcitx5.git
-cd openbangla-fcitx5
+git clone --recursive https://github.com/OpenBangla/OpenBangla-Keyboard.git
+cd OpenBangla-Keyboard
 ```
 
 এরপর বিল্ড কমান্ডগুলো চালানঃ
 ```bash
-mkdir build && cd build
-cmake ..
+git checkout develop
+git submodule update
+mkdir build 
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DENABLE_FCITX=ON
 make
 sudo make install
 ```
