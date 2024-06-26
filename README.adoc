@@ -124,6 +124,18 @@ sudo make install
 === শেষ ধাপঃ
 ওপেনবাংলা কিবোর্ড ইনস্টলের পর আপনার https://github.com/OpenBangla/OpenBangla-Keyboard/wiki/Configuring-Environment[ডেস্কটপ এনভায়রনমেন্ট কনফিগার] করার প্রয়োজন হতে পারে।
 
+=== ইন্সটল পরবর্তী ধাপ:
+
+১. টার্মিনাল ওপেন করে কমান্ড দিন: fcitx5 &
+২. টার্মিনাল আবার ওপেন করে fcitx5-configtool কমান্ড দিয়ে সেটাপ এপ ওপেন করুন।
+৩. এবার এপ ওপেন হলে উপরে সার্চ এর জায়গায় openbangla লিখে সার্চ করুন, সাজেশনে কীবোর্ড চলে আসবে।
+  <img src="https://github.com/me-js-bro/Screen-Shots/blob/main/openbangla/step-2.jpg?raw=true" /> <br>
+৪. এবার কীবোর্ড এড করে ফেলুন। এবং লগ আউট করে আবার লগ ইন করুন। এখন আপনার প্যানেলে ট্রে আইকনে একটা কীবোর্ড দেখতে পাবেন।
+  <img src="https://github.com/me-js-bro/Screen-Shots/blob/main/openbangla/step-3.jpg?raw=true" /> <br>
+CTRL + Space প্রেস করে কীবোর্ড সুইচ করতে পারবেন।
+
+
+
 রিস্টার্ট করুন বা লগ আউট করে পুনরায় লগ ইন করুন। এবার fcitx5 configtool ওপেন করে সেখানে add layout এ গিয়ে openbangla লিখে সার্চ করুন এবং openbangla keyboard এড করুন। এরপর Global Options এ গিয়ে ভাষা পরিবর্তনের জন্যে আপনার পছন্দমতো কিবোর্ড শর্টকাট এড করে নিন।
 
 
