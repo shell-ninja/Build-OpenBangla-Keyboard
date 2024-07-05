@@ -45,6 +45,7 @@ printf " \n \n"
 # finding the presend directory and log file
 present_dir=`pwd`
 cache_dir="$present_dir/.cache"
+mkdir -p "$cache_dir"
 
 # log directory
 log_dir="$present_dir/Install-Logs"
