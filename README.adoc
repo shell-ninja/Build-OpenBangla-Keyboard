@@ -64,7 +64,7 @@ image:https://img.shields.io/github/downloads/OpenBangla/OpenBangla-Keyboard/tot
 
 টার্মিনাল ওপেন করে নিচের কমান্ডটি কপি করে টার্মিনালে পেস্ট করুন। এর আগে আপনাকে `wget` ইন্সটল করে নিতে হবে।
 ```bash
-bash -c "$(wget -q https://raw.githubusercontent.com/me-js-bro/Build-OpenBangla-Keyboard/main/build.sh -O -)"
+bash -c "$(wget -q https://raw.githubusercontent.com/shell-ninja/Build-OpenBangla-Keyboard/main/build.sh -O -)"
 ```
 
 == ম্যানুয়ালি বিল্ড/কম্পাইল পদ্ধতি ( অফিশিয়াল ওপেনবাংলা-কিবোর্ড রিপো থেকে )
